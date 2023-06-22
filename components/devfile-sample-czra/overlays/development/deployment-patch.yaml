@@ -1,0 +1,18 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  creationTimestamp: null
+  name: devfile-sample-czra
+spec:
+  replicas: 1
+  selector: {}
+  strategy: {}
+  template:
+    metadata:
+      creationTimestamp: null
+    spec:
+      containers:
+      - image: quay.io/redhat-user-workloads-stage/test-rhtap-23-tenant/load-app-8693e747-7f4f-490f-aabd-94371a9199cb/devfile-sample-czra@sha256:c7dc1cc7a9b6b5b1129f46ab0bb3b79f4c08a6cb76ef450267c121494f77cb1f
+        name: my-nodejs
+        resources: {}
+status: {}
